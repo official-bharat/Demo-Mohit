@@ -1,8 +1,54 @@
-# React + Vite
+1. Go To terminal
+2. git clone https://github.com/official-bharat/Demo-Mohit.git
+3. cd Demo-Mohit
+4. code . // command for VS Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+5. npm install
+6. npm run dev
 
-Currently, two official plugins are available:
+7. index.html -> src="/src/main.jsx"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+8. make a folder in src
+9. file name -> cars.jsx, cars.style.css
+
+10. cars.jsx
+
+import React from 'react';
+import './cars.style.css';
+
+const Cars = () => {
+return <div>cars</div>;
+};
+
+export default Cars;
+
+11. cars.style.css
+
+p1 {
+color:#000
+}
+
+12. Folder Path of Main.jsx -> src/main.jsx
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import CarModels from './car-models/cars'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+<React.StrictMode>
+<CarModels />
+</React.StrictMode>,
+);
+
+13. initila state of hooks
+
+import { useState } from 'react';
+import './cars.style.css';
+
+const Cars = () => {
+const [name, setName] = useState('Hyundai')
+return <div>cars</div>;
+};
+
+export default Cars;
