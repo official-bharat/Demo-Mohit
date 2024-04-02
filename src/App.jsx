@@ -75,7 +75,7 @@ const App = () => {
         // props
         onClick={() => {
           // update the name
-          setName('Bharat');
+          setName('mohit');
         }}
       >
         Change Name
