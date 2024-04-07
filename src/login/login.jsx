@@ -49,7 +49,18 @@ const Login = () => {
         <button onClick={() => onSubmit()} type="submit">
           Login
         </button>
-        <button onClick={() => setName('HHHH')}>Change Name Value</button>
+        <button
+          onClick={() => {
+            setName('mohit kohli');
+            setEmail('Bharat@gmail.com');
+            setPassword('12345678');
+          }}
+        >
+          Change Name Value
+        </button>
+        <button onClick={() => {}}>
+          Save Information
+        </button>
       </div>
       <p>{name}</p>
       <p>{email}</p>
