@@ -52,3 +52,5 @@ return <div>cars</div>;
 };
 
 export default Cars;
+
+onClick={() => {}}
