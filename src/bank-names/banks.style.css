@@ -1,3 +1,84 @@
-p1 {
-  color: #fff;
+/* .heading {
+  display: flex;
+  background-color: aliceblue;
+  color: #000;
+  flex-direction: row;
+  justify-content: center;
+}
+.forgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: blue;
+}
+.para {
+  display: flex;
+  background-color: aliceblue;
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  padding: 10px;
+  width: 300px;
+  align-items: center;
+  height: 00px;
+}
+.mail {
+  height: 20px;
+  width: 200px;
+}
+.passwrd {
+  height: 20px;
+  margin-top: 10px;
+  width: 200px;
+}
+.log {
+  display: block;
+  margin: 20px 0 0 0;
+  width: 120px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.forgot {
+  height: 20px;
+  margin-top: 20px;
+}
+.sign {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.up {
+  display: flex;
+  flex-direction: row;
+  color: blue;
+  height: 20px;
+  margin: 15px 0 0 0;
+} */
+
+.container-signup {
+  display: flex;
+  background-color: aliceblue;
+
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start ;
+
+  /* width: 100vh; */
+  align-items: center;
+  height: 100vh;
+}
+.maillog {
+  margin-top: 10px;
+  width: 200px;
+}
+.up {
+  font-weight: 800;
+  font-size: 25px;
+}
+.signup-button {
+  margin: 10px;
 }

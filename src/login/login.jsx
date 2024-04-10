@@ -11,13 +11,14 @@ const Login = () => {
   // const lastName = email; //  Dynamic Value
 
   const onSubmit = () => {
+    console.log(email, password,"onSubmit");
     const dbEmail = 'Bharat@gmail.com';
     const dbPassword = '12345678';
     if (dbEmail === email && dbPassword === password) {
       alert('Email Password is correct');
     } else {
       alert('Email Password is incorrect');
-    }
+    s}
   };
   return (
     <div className="container">
@@ -45,7 +46,7 @@ const Login = () => {
           onChange={(event) => {
             setPassword(event.target.value);
           }}
-        />
+        />useState
         <button onClick={() => onSubmit()} type="submit">
           Login
         </button>

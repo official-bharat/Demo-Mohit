@@ -2,37 +2,16 @@ import { useState } from 'react';
 import './App.css';
 
 const App = () => {
-  const [initialState, setState] = useState({
-    name: 'Kia',
+  const Cars = {
+    name: 'Seltos',
+    brand: 'KIA',
     model: '2024',
-  });
-  const [name, setName] = useState('Bharat');
-  console.log('name: ', name);
-  // name for initial state
-  // setName for update the name
-  // hook
-
-  const bool = true;
-  const str = 'Bharat';
-  const car = {
-    name: 'Bharat',
-    age: 27,
   };
-
-  const [boolean, setBoolean] = useState(true);
-  console.log('boolean: ', boolean);
-
-  const [string, setString] = useState('Bharat');
-  console.log('string: ', string);
-
-  const [object, setObject] = useState({
-    name: 'Bharat',
-    age: 27,
-  });
-  console.log('object: ', object);
-
-  // key for initial state
-  // setKey for update the value of the key
+  // Convert Object to string
+  const CarsModified = JSON.stringify(Cars);
+  // Convert String to Object
+  const AgainModified = JSON.parse(CarsModified);
+  // Array of Objects
   const products = [
     {
       name: 'HDFC LIFE',
@@ -51,45 +30,41 @@ const App = () => {
     },
   ];
 
+  // Filter products
+  const productSearch = products.filter(
+    (product) => product.name === 'HDFC LIFE',
+  );
+
+  // Array of String
   const CarModels = ['KIA', 'HYUNDAI', 'TATA'];
+
+  console.log(typeof Cars, typeof CarsModified, typeof AgainModified);
 
   return (
     <>
       <div className="container">
-        {name} {initialState.name} - {initialState.model}
         {CarModels.map((cars, index) => {
           return <p key={index}>{cars}</p>;
         })}
-        {products.map((res, index) => {
+      </div>
+      <div className="container">
+        {products.map((product, index) => {
           return (
-            <div key={index} style={{ backgroundColor: '#fff' }}>
-              <p>{res.name}</p>
-              <p>{res.description}</p>
-              <p>{res.price}</p>
-              <p>{index}</p>
-            </div>
+            <p key={index}>
+              {product.name} {product.description} {product.price}
+            </p>
           );
         })}
       </div>
-      <button
-        // props
-        onClick={() => {
-          // update the name
-          setName('mohit');
-        }}
-      >
-        Change Name
-      </button>
-      <button
-        onClick={() => {
-          setState({
-            name: 'Hyundai',
-            model: '2023',
-          });
-        }}
-      >
-        Change Product
-      </button>
+      <div className="container">
+        {productSearch.map((product, index) => {
+          return (
+            <p key={index}>
+              {product.name} {product.description} {product.price}
+            </p>
+          );
+        })}
+      </div>
     </>
   );
 };
