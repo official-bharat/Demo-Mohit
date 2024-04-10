@@ -6,6 +6,7 @@ const App = () => {
     name: 'Seltos',
     brand: 'KIA',
     model: '2024',
+    variant:'HTX'
   };
   // Convert Object to string
   const CarsModified = JSON.stringify(Cars);
