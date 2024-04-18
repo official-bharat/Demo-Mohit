@@ -1,10 +1,10 @@
-import './practice.style.css';
-import { useState } from 'react';
+import React from 'react'
+import { Cars } from '../loop-learning'
 
-const practice = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState ('')
-return (
-  <div></div>
-)
+const Practice = () => {
+  return (
+    <div><Cars /></div>
+  )
 }
+
+export default Practice
