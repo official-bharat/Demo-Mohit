@@ -7,6 +7,7 @@ import Login from './login/login.jsx';
 import App from './App.jsx';
 import { Banks, Cars, Investment } from './loop-learning/index.jsx';
 import MohitKohli from './loop-learning/index.jsx';
+import ForLoop from './forloop/index.jsx';
 // import practice from './practice/practice.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,9 +15,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <CarModels />
     <Login />
     <App /> */}
-    <Banks />
+    {/* <Banks />
     <Cars />
     <Investment />
-    <MohitKohli />
+    <MohitKohli /> */}
+    <ForLoop />
   </React.StrictMode>,
 );
