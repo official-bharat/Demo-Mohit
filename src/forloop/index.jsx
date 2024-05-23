@@ -4,13 +4,13 @@ const ForLoop = () => {
   const cars = ['BMW', 'Volvo', 'Saab', 'Ford', 'Fiat', 'Audi'];
   const CarName = [
     { name: 'KiA', rating: 5 },
-    { name: 'KiA', rating: 5 },
-    { name: 'KiA', rating: 5 },
-    { name: 'KiA', rating: 5 },
+    { name: 'Hyundai', rating: 5 },
+    { name: 'TATA', rating: 5 },
+    { name: 'MAHINDRA', rating: 5 },
   ];
   let stars = '';
-  for (let i = 0; i < CarName.length; i++) {
-    console.log(i, 'i', CarName[i].name);
+  for (let i = 0; i < cars.length; i++) {
+    console.log(i, 'i', cars[1]);
   }
 
   const getCarName = (key) => {
@@ -19,18 +19,28 @@ const ForLoop = () => {
         return 'Mohit Kohli';
       case 'Bharat_Chhabra':
         return 'Bharat Chhabra';
-      // return `Kohli ${lastName} ${age}`
-      // return 'Kohli' + ' ' + lastName + ' ' + age;
       default:
         return 'Unknown User';
+    }
+  };
+
+  const getCarNameWithIfElse = (key) => {
+    if (key === 'Bharat_Chhabra') {
+      return 'Bharat Chhabra';
+    } else if (key === 'Mohit_Kohli') {
+      return 'Mohit Kohli';
+    } else {
+      return 'Unknown User';
     }
   };
   return (
     <>
       <div>FOR LOOP</div>
       <div>{stars}</div>
-      <div>Switch Case</div>
+      <div>Switch Condition --- </div>
       <div>{getCarName('Mohit_Kohli')}</div>
+      <div>If Else Condition --- </div>
+      <div>{getCarNameWithIfElse('Mohit_Kohli')}</div>
     </>
   );
 };
