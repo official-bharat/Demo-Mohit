@@ -16,24 +16,22 @@ const Banking = () => {
   );
 };
 const Banks = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
 
- 
-      const onSubmit = () => {
-    console.log(email, password,"onSubmit");
+  const onSubmit = () => {
+    console.log(email, password, 'onSubmit');
     const dbEmail = 'Bharat@gmail.com';
-const dbPassword = '12345678';
+    const dbPassword = '12345678';
     if (dbEmail === email && dbPassword === password) {
       alert('Email Password is correct');
     } else {
       alert('Email Password is incorrect');
-      
     }
   };
-    
+
   return (
     // <div
     //   style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}
