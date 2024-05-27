@@ -1,14 +1,12 @@
-import React from 'react';
-import Laky from './images/LAKY4976.JPG'
+import Laky from './images/LAKY4976.jpeg';
 
-function imagesDemo() {
+function ImagesDemo() {
   return (
     <>
       <div>ImagesDemo</div>
-      {/* <img src={'require('./images/LAKY4976.JPG')'} height="200" width="200" /> */}
-      <img src={require('./logo.jpeg')} />
+      <img src={Laky} style={{ height: 400, width: 800 }} />
     </>
   );
 }
 
-export default imagesDemo;
+export default ImagesDemo;
