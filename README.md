@@ -1,9 +1,14 @@
+First Time Setup the Project
+
 1. Go To terminal
 2. git clone https://github.com/official-bharat/Demo-Mohit.git
 3. cd Demo-Mohit
 4. code . // command for VS Code
 
 5. npm install
+
+---
+
 6. npm run dev
 
 7. index.html -> src="/src/main.jsx"

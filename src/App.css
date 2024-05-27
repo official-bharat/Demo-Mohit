@@ -46,3 +46,9 @@ p {
   color: #000;
   text-align: center;
 }
+.image {
+  height: 400px;
+  width: 800px;
+  border-radius: 16px;
+  border-top-left-radius: 100px;
+}
