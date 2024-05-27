@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import './App.css';
+import { imagesDemo } from './imagesDemo';
 
 const App = () => {
   const Cars = {
     name: 'Seltos',
     brand: 'KIA',
     model: '2024',
-    variant:'HTX'
+    variant: 'HTX',
   };
   // Convert Object to string
   const CarsModified = JSON.stringify(Cars);

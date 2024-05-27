@@ -16,7 +16,7 @@ const ForLoop = () => {
   const getCarName = (key) => {
     switch (key) {
       case 'Mohit_Kohli':
-        return 'Mohit Kohli';
+        return 'Mohit Kohli'; 
       case 'Bharat_Chhabra':
         return 'Bharat Chhabra';
       default:
@@ -33,6 +33,16 @@ const ForLoop = () => {
       return 'Unknown User';
     }
   };
+  const Bank = (key ) => {
+    switch (key) {
+      case 'kotak' : 
+      return 'mahindra';
+      case 'hdfc' : 
+      return 'ltd';
+      default : 
+      return 'NBFC';
+    }
+  };
   return (
     <>
       <div>FOR LOOP</div>
@@ -41,6 +51,7 @@ const ForLoop = () => {
       <div>{getCarName('Mohit_Kohli')}</div>
       <div>If Else Condition --- </div>
       <div>{getCarNameWithIfElse('Mohit_Kohli')}</div>
+      <div>{Bank ('icici')} </div>
     </>
   );
 };
