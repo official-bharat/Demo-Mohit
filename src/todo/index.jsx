@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Todo = () => {
   // for Input
-  const [value, setValue] = useState('');
+  const [inputValue, setValue] = useState('');
   // functions
   const onChange = (event) => {
     setValue(event.target.value);
@@ -14,23 +14,12 @@ const Todo = () => {
 
   // functions
   // For Button
-  const onSubmit = () => {
-    let newItem = [];
-    // Push the value
-    newItem.push({ name: value });
-    console.log(newItem, 'newItem'); // [{name: 'Add '}]
-    // new and old both items
-    setTodoList([...todoList, ...newItem]);
-    // Only New Items
-    // setTodoList(newItem);
-  };
 
   const onSubmitSecondMethod = () => {
-    let newItem = [...todoList];
+    let newItem = [...todoList]; // ...TodoList === ExistingItems
     // Push the value
-    newItem.push({ name: value });
-    console.log(newItem, 'newItem'); // [{name: 'Add '}]
-
+    newItem.push({ name: inputValue });
+    console.log('newItem: ', newItem, todoList);
     setTodoList(newItem);
   };
 
@@ -39,7 +28,7 @@ const Todo = () => {
       <input
         type="text"
         placeholder="Add New Todo"
-        value={value}
+        value={inputValue}
         onChange={onChange}
       />
       <button onClick={onSubmitSecondMethod}>Submit</button>
